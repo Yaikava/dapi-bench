@@ -1,6 +1,5 @@
-start cmd.exe /k npm run discordeno
-start cmd.exe /k npm run harmony
-start cmd.exe /k npm run discordjs
-start cmd.exe /k npm run eris
-start cmd.exe /k npm run detritus
+set list= discordeno harmony discordjs eris detritus
+(for %%a in (%list%) do ( 
+   start cmd.exe /k npm run %%a
+))
 exit
