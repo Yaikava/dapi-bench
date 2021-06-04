@@ -30,21 +30,11 @@ exports.TOKEN = "";
 exports.OWNER_ID = "130136895395987456";
 ```
 
-3. Open 5(as many libraries you want to test) different terminal side by side so you can see them all.
+3. Run a start script for your platform (Windows: start-windows.bat Linux: start-linux.sh)
 
-4. In each one you can run the following commands for each library:
+4. Wait and watch the logs to track startup times.
 
-```shell
-npm run discordeno
-npm run harmony
-npm run discordjs
-npm run eris
-npm run detritus
-```
-
-5. Wait and watch the logs to track startup times.
-
-6. Once all libraries are fully ready, go into a channel and type `!starttests` to begin logging memory.
+5. Once all libraries are fully ready, go into a channel and type `!starttests` to begin logging memory.
 
 > Note: Do NOT start up every library at once, wait for each library one at a time to start all your shards. Remember your bot has a identify rate limit which needs to be respected. Due to this delay, you may have a slightly higher memory count on libraries that are started earlier as they will have received more events coming in while waiting for other libraries to fully start.
 
